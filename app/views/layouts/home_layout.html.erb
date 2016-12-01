@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header class="container">
+    <nav class="nav nav-bar default">
+      <ul class="nav navbar-nav">
+        <%= render 'home/menu' %>
+      </ul>
+    </nav>
+  </header>  
+  <%= yield %>
+
+</body>
+</html>
